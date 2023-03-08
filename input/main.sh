@@ -18,7 +18,9 @@ ln -s /var/cache/apk /etc/apk/cache
 apk update
 
 #install some packages we need for UserLAnd
-apk add bash sudo dropbear mesa-gl xvfb x11vnc xsetroot xterm twm expect shadow wget curl
+apk add bash sudo dropbear mesa-gl xvfb x11vnc xsetroot xterm expect shadow wget curl
+apk add pulseaudio pulseaudio-alsa
+apk add lxqt-desktop lxqt-core lxqt-panel lxqt-admin lxqt-config lxqt-notificationd lxqt-powermanagement lxqt-themes openbox
 
 #clean up after ourselves
 apk cache clean
